@@ -63,7 +63,7 @@ var ticTacToe = function (board, msg) {
 				this.winSchema = diag[1];
 			}
 
-			if (b.indexOf('-') == -1)
+			if (b.indexOf('-') == -1 && this.status == -1)
 				this.status = 0;
 		},
 		click: function(tile) {
@@ -92,7 +92,7 @@ var ticTacToe = function (board, msg) {
 		drawLine: function(from, to) {
 			line = $('#line');
 			line.css('zIndex', 2);				//move svg layer to top from -1
-			
+
 			fromPos = from.position();
 			fromPos.top += from.height()/2;
 			fromPos.left += from.width()/2;
