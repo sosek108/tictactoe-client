@@ -1,0 +1,38 @@
+.x {
+	/*background-color: red !important;*/
+}
+.o {
+	/*background-color: blue !important;*/
+}
+
+.x .inner-tile {
+	background-image: url('../images/x.svg');
+}
+.o .inner-tile {
+	background-image: url('../images/o.svg');
+}
+.inner-tile {
+	background-size: 50px 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.win {
+	background-color: blue !important;
+}
+
+#line #line-path {
+	stroke-width: 10px;
+	stroke: red;
+	stroke-linecap: round;
+
+    animation-name: draw;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards; // Stay on the last frame
+    animation-iteration-count: 1; // Run only once
+    animation-timing-function: ease;
+}
+@keyframes draw {
+	to {
+        stroke-dashoffset: 0;
+    }
+}

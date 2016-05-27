@@ -1,0 +1,51 @@
+header h1 {
+	text-align: center;
+}
+.container {
+	width: 80vw;
+	margin: auto;
+}
+#board {
+	background-color: black;
+	width: 304px;
+	margin: auto;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	position: relative;
+}
+#board .tile {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	background-color: white;
+}
+.tile .inner-tile {
+	margin: auto;
+	width: 80%;
+	height: 80%;
+}
+.tile img {
+	width: 100%;
+}
+.b-right {
+	margin-right: 2px;
+}
+.b-bottom {
+	margin-bottom: 2px;
+}
+#message {
+	text-align: center;
+	background-color: white;
+}
+#line {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
